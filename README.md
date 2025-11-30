@@ -4,7 +4,7 @@
 
 This project is designed to teach you the fundamentals of blockchain development through building a practical, real-world application: a Telegram bot that provides analytics and insights for the Hyperliquid perpetual futures protocol.
 
-By the end of this internship, you'll have built a production-ready data analytics bot that reads on-chain trading data, indexes it efficiently, and serves it through an intuitive Telegram interface. More importantly, you'll understand how blockchains work at a fundamental level and how to build applications on top of them.
+By the end of this project, the goal is to have built a  a production-ready data analytics bot that reads onchain trading data, indexes it efficiently, and serves it through an intuitive Telegram interface. More importantly, you'll understand how blockchains work at a fundamental level and how to build applications on top of them.
 
 ## What You'll Build
 
@@ -16,15 +16,6 @@ A Telegram bot that allows users to query Hyperliquid trading data through simpl
 - Whale watching (tracking large position movements)
 - Market statistics and trend visualization
 - Customizable alerts for significant market events
-
-## Why This Project?
-
-Traditional blockchain tutorials focus on theory or simple token transfers. This project is different because:
-
-1. **Real Protocol Integration**: You'll work with Hyperliquid, a live perpetual futures DEX, learning how real DeFi protocols operate
-2. **Practical Data Engineering**: You'll solve actual problems around indexing, storing, and querying blockchain data efficiently
-3. **User-Facing Application**: Building a Telegram bot teaches you how to make blockchain data accessible to non-technical users
-4. **Production-Ready Code**: You'll learn deployment, monitoring, error handling, and other professional development practices
 
 ## Architecture Overview
 
@@ -227,7 +218,7 @@ hyperliquid-data-bot/
 1. **Clone and Environment Setup**
 ```bash
 git clone <repository-url>
-cd hyperliquid-data-bot
+cd hyperpulse
 python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install -r requirements.txt
@@ -276,9 +267,9 @@ Your development will happen in phases:
 - **Etherscan**: Block explorer to visually see what you're querying
 
 ### Hyperliquid Specific
-- **Hyperliquid Docs**: Protocol mechanics and contract addresses
-- **Hyperliquid Explorer**: See live trading data
-- **Contract ABIs**: Available in the docs, needed for decoding events
+- **Hyperliquid Docs**: Protocol mechanics and contract addresses (https://hyperliquid.gitbook.io/hyperliquid-docs)
+- **Hyperliquid Explorer**: See live trading data (https://hypurrscan.io/)
+- **Contract ABIs**: Available in the docs, needed for decoding events (find this and lmk!)
 
 ### Python Tools
 - **asyncio Tutorial**: You'll need async/await for concurrent operations
@@ -387,14 +378,6 @@ As you work through this project:
 3. **Check Block Explorers**: Visually verify what you're trying to query
 4. **Test with Small Ranges**: Don't try to index 10,000 blocks on your first try
 5. **Ask Questions**: Document what you tried and what happened
-
-## Philosophy
-
-This isn't just about building a bot - it's about understanding how decentralized systems work from first principles. Every abstraction you use (web3.py, databases, Telegram) is hiding complexity. When things break, you need to understand what's happening underneath.
-
-**Approach this project with curiosity**: Why does it work this way? What are the tradeoffs? How would I build it differently?
-
-The best blockchain developers aren't the ones who can use the most libraries - they're the ones who understand the fundamentals deeply enough to know when to use which tool.
 
 Good luck! 🚀
 
